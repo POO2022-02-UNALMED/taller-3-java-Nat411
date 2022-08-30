@@ -23,7 +23,8 @@ public class Control {
 		this.tv.volumenDown();
 	}
 	public void setCanal(int canal) {
-		this.tv.canal = canal;
+		if (canal >= 1 && canal <=120 && this.tv.getEstado()== true)
+			this.tv.setCanal(canal);
 	}
 	public void enlazar(TV televisor) {
 		this.tv = televisor;
