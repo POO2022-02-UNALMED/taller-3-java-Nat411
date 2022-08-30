@@ -1,4 +1,5 @@
 package taller3.televisores;
+//package televisores;
 
 public class TV {
 	private Marca marca;
@@ -6,7 +7,7 @@ public class TV {
 	private int precio;
 	private boolean estado;
 	private int volumen;
-	private Control control;
+	Control control;
 	private static int numTV;
 	
 	public TV(Marca brand, boolean state) {
