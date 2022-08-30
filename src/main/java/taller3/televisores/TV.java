@@ -11,75 +11,75 @@ public class TV {
 	private static int numTV;
 	
 	public TV(Marca brand, boolean state) {
-		marca = brand;
-		estado = state;
-		canal = 1;
-		volumen = 1;
-		precio = 500;
-		numTV++;
+		this.marca = brand;
+		this.estado = state;
+		this.canal = 1;
+		this.volumen = 1;
+		this.precio = 500;
+		TV.numTV++;
 	}
 	
 	public Marca getMarca() {
 		return marca;
 	}
 	public void setMarca(Marca brand) {
-		marca = brand;
+		this.marca = brand;
 	}
 	public Control getControl() {
 		return control;
 	}
 	public void setControl(Control cont) {
-		control = cont;
+		this.control = cont;
 	}
 	public int getPrecio() {
 		return precio;
 	}
 	public void setPrecio(int price) {
-		precio = price;
+		this.precio = price;
 	}
 	public int getVolumen() {
 		return volumen;
 	}
 	public void setVolumen(int vol) {
-		volumen = vol;
+		this.volumen = vol;
 	}
 	public int getCanal() {
 		return canal;
 	}
 	public void setCanal(int channel) {
-		canal = channel;
+		this.canal = channel;
 	}
 	public static int getNumTV() {
 		return numTV;
 	}
 	public void turnOn() {
-		estado = true;
+		this.estado = true;
 	}
 	public void turnOff() {
-		estado = false;
+		this.estado = false;
 	}
 	public boolean getEstado() {
 		return estado;
 	}
 	public void canalUp() {
-		if (canal>=1 && canal<120 && estado == true)
-			canal ++;
+		if (this.canal>=1 && this.canal<120 && this.estado == true)
+			this.canal ++;
 	}
 	public void canalDown() {
-		if (canal >1 && canal <=120 && estado == true)
-			canal--;
+		if (this.canal >1 && this.canal <=120 && this.estado == true)
+			this.canal--;
 	}
 	public void volumenUp() {
-		if (volumen >=0 && volumen <7 && estado == true)
-			volumen++;
+		if (this.volumen >=0 && this.volumen <7 && this.estado == true)
+			this.volumen++;
 				
 	}
 	public void volumenDown() {
-		if(volumen >0 && volumen <=7 && estado == true)
-			volumen--;
+		if(this.volumen >0 && this.volumen <=7 && this.estado == true)
+			this.volumen--;
 	}
 	public static void setNumTV(int num) {
-		numTV = num;
+		TV.numTV = num;
 	}
 	
 }

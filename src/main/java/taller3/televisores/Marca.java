@@ -5,14 +5,14 @@ public class Marca {
 	private String nombre;
 	
 	public Marca (String nom) {
-		nombre = nom;
+		this.nombre = nom;
 	}
 	
 	public String getNombre() {
 		return nombre;
 	}
 	public void setNombre(String nom) {
-		nombre = nom;
+		this.nombre = nom;
 	}
 	
 }
